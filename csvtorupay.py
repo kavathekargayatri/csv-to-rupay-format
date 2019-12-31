@@ -17,7 +17,7 @@ dfApi.astype(str)
 try:
     consumer = KafkaConsumer(group_id = 'grp6',bootstrap_servers=['localhost:9092'],auto_offset_reset='latest')
     consumer.subscribe(['csv_rupay'])
-    print("Subscribed to a topic named processed. waiting for an event...")
+    print("Subscribed to a topic named csv_rupay. waiting for an event...")
     for message in consumer:
         print("Received an event.")
         print("Procesing... Please wait...")
@@ -57,7 +57,7 @@ try:
                                           value_serializer=lambda x: dumps(x).encode('utf-8'))
 
                 producer1.send('parsed_data', value=data)
-                print("Processed and published to a topic cleaned.")
+                print("Processed and published to a topic parsed_data.")
                 print("...........................................................................................")
 
         except Exception as e:
