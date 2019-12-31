@@ -59,6 +59,12 @@ Input of this topic is a json data containing location of a csv.
 
 event based : For input use Topic 'csv_rupay'.
 
+Input format:
+
+
+        {"ID": "P1577770928", "Token": 1577770713, "DateTime": "31-12-19 11:12", "Status": "Success", "Message": "preprocessed_datacsvcsv.csv Ready to proceed", "code": 201, "Payload": {"Parameters": {"action": "predict", "inputCsv": "", "outputCsv": "", "overwrite": "yes", "algoName": "knn", "algoType": "regression"}, "Data": {"Location": "preprocessed_datacsvcsv.csv"}}}
+    
+
 <a name="output"/>
 
 ## Output:

@@ -43,7 +43,7 @@ try:
                 values = value.split(",")
                 dataList = []
                 for k in range(len(keys)):
-                    print(str(keys[k])[1:])
+                    # print(str(keys[k])[1:])
                     # result = dfApi.where(dfApi['name'].astype(str) == 'Primary Account Number(Fortiate)')
                     result = dfApi.loc[dfApi['name'] == str(keys[k])[1:]]
                     result.reset_index(drop=True)
